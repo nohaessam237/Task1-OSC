@@ -1,0 +1,62 @@
+c@osc-VirtualBox:~$ mkdir Noha_Essam
+osc@osc-VirtualBox:~$ ls
+ Desktop   Documents   Downloads  'Linux summer training'   Music   Noha_Essam   Pictures   Public   snap   Templates   training   Videos
+osc@osc-VirtualBox:~$ mkdir "Noha Essam"
+osc@osc-VirtualBox:~$ ls
+ Desktop   Documents   Downloads  'Linux summer training'   Music  'Noha Essam'   Noha_Essam   Pictures   Public   snap   Templates   training   Videos
+osc@osc-VirtualBox:~$ rm -r  Noha_Essam
+osc@osc-VirtualBox:~$ ls
+ Desktop   Documents   Downloads  'Linux summer training'   Music  'Noha Essam'   Pictures   Public   snap   Templates   training   Videos
+osc@osc-VirtualBox:~$ cd Noha\ Essam/
+osc@osc-VirtualBox:~/Noha Essam$ mkdir Documents 
+osc@osc-VirtualBox:~/Noha Essam$ cd Documents/
+osc@osc-VirtualBox:~/Noha Essam/Documents$ touch file1.txt file2.txt file3.text
+osc@osc-VirtualBox:~/Noha Essam/Documents$ ls
+file1.txt  file2.txt  file3.text
+osc@osc-VirtualBox:~/Noha Essam/Documents$ echo Hello World1 >file1
+osc@osc-VirtualBox:~/Noha Essam/Documents$ echo Hello World2  >file2
+osc@osc-VirtualBox:~/Noha Essam/Documents$ echo Hello World3  >file3
+osc@osc-VirtualBox:~/Noha Essam/Documents$ cd ..
+osc@osc-VirtualBox:~/Noha Essam$ touch .hidden_file
+osc@osc-VirtualBox:~/Noha Essam$ ls -a
+.  ..  Documents  .hidden_file
+osc@osc-VirtualBox:~/Noha Essam$ nano Documents/file1.txt
+osc@osc-VirtualBox:~/Noha Essam$ cat file1
+cat: file1: No such file or directory
+osc@osc-VirtualBox:~/Noha Essam$ cd Documents/
+osc@osc-VirtualBox:~/Noha Essam/Documents$ cat file1
+Hello World1
+osc@osc-VirtualBox:~/Noha Essam/Documents$ nano Documents/file1.txt
+osc@osc-VirtualBox:~/Noha Essam/Documents$ nano file1
+osc@osc-VirtualBox:~/Noha Essam/Documents$ cat file1
+Hello My name is Noha :)
+osc@osc-VirtualBox:~/Noha Essam/Documents$ cd ..
+osc@osc-VirtualBox:~/Noha Essam$ cd Documents/
+osc@osc-VirtualBox:~/Noha Essam/Documents$ mkdir "_"
+osc@osc-VirtualBox:~/Noha Essam/Documents$ cd _/
+osc@osc-VirtualBox:~/Noha Essam/Documents/_$ cd ..
+osc@osc-VirtualBox:~/Noha Essam/Documents$ cd ..
+osc@osc-VirtualBox:~/Noha Essam$ cp -r Documents/ "My_Documents"
+osc@osc-VirtualBox:~/Noha Essam$ ls
+Documents  My_Documents
+osc@osc-VirtualBox:~/Noha Essam$ ls -a
+.  ..  Documents  .hidden_file  My_Documents
+osc@osc-VirtualBox:~/Noha Essam$ cd Documents/
+osc@osc-VirtualBox:~/Noha Essam/Documents$ mv file2.txt file3.txt .
+mv: 'file2.txt' and './file2.txt' are the same file
+mv: cannot stat 'file3.txt': No such file or directory
+osc@osc-VirtualBox:~/Noha Essam/Documents$ cd..
+cd..: command not found
+osc@osc-VirtualBox:~/Noha Essam/Documents$ cd ..
+osc@osc-VirtualBox:~/Noha Essam$ mv Documents/file2.txt Documents/file3 .
+osc@osc-VirtualBox:~/Noha Essam$ ls
+Documents  file2.txt  file3  My_Documents
+osc@osc-VirtualBox:~/Noha Essam$ cd ..
+osc@osc-VirtualBox:~$ ls
+ Desktop   Documents   Downloads  'Linux summer training'   Music  'Noha Essam'   Pictures   Public   snap   Templates   training   Videos
+osc@osc-VirtualBox:~$ rm -r Noha\ Essam/
+osc@osc-VirtualBox:~$ ls
+ Desktop   Documents   Downloads  'Linux summer training'   Music   Pictures   Public   snap   Templates   training   Videos
+osc@osc-VirtualBox:~$ ^C
+osc@osc-VirtualBox:~$ 
+
